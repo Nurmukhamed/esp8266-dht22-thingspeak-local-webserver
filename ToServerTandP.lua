@@ -12,8 +12,8 @@ function postThingSpeakTemp()
  
     connout:on("connection", function(connout, payloadout)
 	if temp ~= -999 and humi ~= -999 then
-        	connout:send("GET /update?api_key=LTSKD514E4O5UKB4&field3=" .. temp .. "." .. temp_dec 
-        	.. "&field4=" .. humi .. "." .. humi_dec
+        	connout:send("GET /update?api_key=XXXXXXXXXXXXXXXX&field1=" .. temp .. "." .. temp_dec 
+        	.. "&field1=" .. humi .. "." .. humi_dec
 		.. " HTTP/1.1\r\n"
         	.. "Host: api.thingspeak.com\r\n"
         	.. "Connection: close\r\n"

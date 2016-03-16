@@ -1,0 +1,5 @@
+bmp085.init(1, 2)
+local t = bmp085.temperature()
+print(string.format("Temperature BMP: %s.%s degrees C", t / 10, t % 10))
+local p = bmp085.pressure()
+print(string.format("Pressure BMP: %s.%s mm.Hg", p / 133, p % 133))
